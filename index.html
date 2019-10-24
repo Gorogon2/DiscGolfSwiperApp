@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!--Screen 1-->
+            <div class="swiper-slide slide1">
+                <h1>Do you have what it takes?</h1>
+            </div>
+            <!--Screen 2-->
+            <div class="swiper-slide slide2">
+                <h1>If you want to be the best...</h1>
+            </div>
+            <!--Screen 3-->
+            <div class="swiper-slide slide3">
+                <h1>You've got to use the best.</h1>
+                <p>Innova Discs</p>
+            </div>
+    </div>
+
+
+        <!-- Add pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!--Swiper buttons to white-->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    
+    <!--Content Delivery Network Option CDN-->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+    //Swiper Script
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            cubeEffect: {
+                    shadow: false,
+                    slideShadows: false,
+                    shadowOffset: 20,
+                    shadowScale: 0.94,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        })
+    
+    </script>
+
+</body>
+</html>
